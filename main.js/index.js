@@ -5,7 +5,7 @@ function getUsers() {
     .then(response => response.json())
     .then(data => {
       const userList = document.getElementById("userList");
-      userList.innerHTML = ""; // avvalgisini tozalaydi
+      userList.innerHTML = ""; 
 
       data.forEach(user => {
         const li = document.createElement("li");
